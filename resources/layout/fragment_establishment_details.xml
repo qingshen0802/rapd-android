@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_above="@+id/share">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/establishment_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <br.com.tratto.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/shop_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/establishment_image"
+                android:padding="15dp">
+
+            <RelativeLayout
+                    android:id="@+id/shop_location_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                <ImageView
+                        android:id="@+id/ic_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location"
+                        android:tint="@color/colorPrimary"
+                        android:layout_marginRight="15dp"
+                        android:layout_centerVertical="true"/>
+
+                <TextView
+                        android:id="@+id/street"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rua dos Autonomistas ,22"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/ic_location"
+                        android:layout_toLeftOf="@+id/place_distance"/>
+
+                <TextView
+                        android:id="@+id/borough_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jd. Carvalho-São Paulo/SP"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/street"
+                        android:layout_toRightOf="@+id/ic_location"/>
+
+                <TextView
+                        android:id="@+id/place_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/light_grey"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="200m"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/see_on_map_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_on_map"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark_grey"
+                    android:textStyle="bold"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:textAllCaps="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/grey_button_round"
+                    android:layout_below="@+id/shop_location_description"
+                    android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/shop_location_layout"/>
+
+        <RelativeLayout
+                android:id="@+id/shop_description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div1"
+                android:padding="15dp">
+
+            <ImageView
+                    android:id="@+id/ic_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_description"/>
+
+            <TextView
+                    android:id="@+id/establishment_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ic_description"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/dark_grey"/>
+
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_below="@+id/shop_description_layout"/>
+
+        <RelativeLayout
+                android:id="@+id/shop_contact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div2">
+
+            <ImageView
+                    android:id="@+id/ic_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_telephone"
+                    android:tint="@color/colorPrimary"
+                    android:layout_centerVertical="true"/>
+
+            <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telephone"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/ic_contact"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"/>
+
+            <TextView
+                    android:id="@+id/establishment_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/phone"
+                    android:layout_toRightOf="@+id/ic_contact"/>
+
+            <View
+                    android:id="@+id/div6"
+                    android:layout_width="1px"
+                    android:layout_height="70dp"
+                    android:background="@color/light_grey"
+                    android:layout_toLeftOf="@+id/site_tv"/>
+
+            <TextView
+                    android:id="@+id/site_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/site"
+                    android:textAllCaps="true"
+                    android:drawableLeft="@drawable/ic_site"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"/>
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/div3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_below="@+id/shop_contact_layout"/>
+
+        <LinearLayout
+                android:id="@+id/shop_pay_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div3"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/make_payment_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/red_button"
+                    android:text="@string/do_payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+        </LinearLayout>
+
+        <View
+                android:id="@+id/div4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_below="@+id/shop_pay_button_layout"/>
+
+        <RelativeLayout
+                android:id="@+id/shop_balance_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div4"
+                android:padding="15dp">
+
+            <ImageView
+                    android:id="@+id/ic_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_balance"
+                    android:layout_marginRight="15dp"/>
+
+            <TextView
+                    android:id="@+id/shopping_club_balance_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping_club_balance"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:layout_toRightOf="@+id/ic_balance"/>
+
+            <TextView
+                    android:id="@+id/shopping_club_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 122,00"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/ic_balance"
+                    android:layout_below="@+id/shopping_club_balance_txt"
+                    android:textSize="28sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+            <TextView
+                    android:id="@+id/shopping_club_expiration_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Validade: 12/12/1212"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/ic_balance"
+                    android:layout_below="@+id/shopping_club_balance"/>
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/div5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_below="@+id/shop_balance_layout"/>
+
+        <RelativeLayout
+                android:id="@+id/shop_promo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div5"
+                android:padding="15dp">
+
+            <ImageView
+                    android:id="@+id/ic_promos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_promotions"
+                    android:tint="@color/colorPrimary"
+                    android:layout_marginRight="15dp"/>
+
+            <TextView
+                    android:id="@+id/active_promotions_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_promotions"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:layout_toRightOf="@+id/ic_promos"/>
+
+            <TextView
+                    android:id="@+id/active_promotions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_promos"
+                    android:layout_below="@+id/active_promotions_text"
+                    android:text="Pague com Rapdin e ganhe 5% de desconto na sua compra + porção de bredstick em sua próxima visita."
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/light_grey" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

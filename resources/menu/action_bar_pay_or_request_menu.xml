@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+      android:id="@+id/action_check"
+      android:icon="@drawable/ic_check_white"
+      android:title="pay_request_profiles"
+      android:visible="false"
+      app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_load_funds"
+        android:icon="@drawable/no_balance_icon"
+        android:title="load_funds"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+</menu>

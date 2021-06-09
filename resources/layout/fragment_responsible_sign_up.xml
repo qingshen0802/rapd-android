@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/responsible_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/responsible_name"
+        android:textColor="@color/grey_letters"/>
+
+    <EditText
+        android:id="@+id/type_responsible_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:background="@drawable/light_grey_bottom_border"
+        android:layout_below="@id/responsible_name_text"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:id="@+id/responsible_cpf_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/responsible_cpf"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/grey_letters"
+        android:layout_below="@+id/type_responsible_name"/>
+
+    <EditText
+        android:id="@+id/type_responsible_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:singleLine="true"
+        android:background="@drawable/light_grey_bottom_border"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/responsible_cpf_text"/>
+
+    <TextView
+        android:id="@+id/responsible_email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/responsible_email"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/grey_letters"
+        android:layout_below="@+id/type_responsible_cpf"/>
+
+    <EditText
+        android:id="@+id/type_responsible_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:background="@drawable/light_grey_bottom_border"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/responsible_email_text"/>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/register"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        style="@style/red_button"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

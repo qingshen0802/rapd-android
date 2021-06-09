@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="8dp">
+
+  <TextView
+          android:id="@+id/partner_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/partner_logo"
+          android:layout_centerHorizontal="false"
+          android:layout_marginLeft="16dp"
+          android:layout_toRightOf="@+id/partner_logo"
+          android:text="Pizza Hut Shopping Eldorado"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+  <TextView
+          android:id="@+id/partner_credit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/partner_user_name"
+          android:layout_alignParentTop="false"
+          android:layout_alignStart="@+id/partner_user_name"
+          android:layout_below="@+id/partner_user_name"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/round_dark_red_background"
+          android:gravity="center"
+          android:padding="5dp"
+          android:text="Você tem R$ 3,20 em dito"
+          android:textColor="@android:color/white" />
+
+  <TextView
+          android:id="@+id/partner_user_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/partner_name"
+          android:layout_alignStart="@+id/partner_name"
+          android:layout_below="@+id/partner_name"
+          android:layout_centerVertical="false"
+          android:layout_marginTop="8dp"
+          android:text="\@pizzahut_eld"
+          android:textSize="18sp" />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/partner_logo"
+          android:layout_width="64dp"
+          android:layout_height="64dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerInParent="false"
+          android:layout_centerVertical="true"
+          android:layout_marginBottom="8dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="8dp"
+          android:src="@drawable/profile_placeholder" />
+
+  <TextView
+          android:id="@+id/partner_distance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/partner_name"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/partner_name"
+          android:layout_marginEnd="16dp"
+          android:layout_marginRight="16dp"
+          android:gravity="center_vertical"
+          android:text="200m"
+          android:textAlignment="center"
+          android:textColor="@color/tab_inactive"
+          android:textSize="14sp" />
+
+</RelativeLayout>

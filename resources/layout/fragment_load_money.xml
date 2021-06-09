@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="4"
+                      android:background="@color/pale_blue_background"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/large_left_margin"
+                    android:layout_marginStart="@dimen/large_left_margin"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/currency"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/change_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/change_wallet"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/large_left_margin"
+                    android:layout_marginStart="@dimen/large_left_margin"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/amount_to_load"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bottom_border"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:gravity="right"
+                        android:maxLength="13"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/amount_in_real_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/money_conversion_icon"
+                        android:tint="@color/white"/>
+
+                <TextView
+                        android:id="@+id/amount_in_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/large_left_margin"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/large_left_margin"
+                    android:layout_marginStart="@dimen/large_left_margin"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/form_of_payment"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+
+                <Spinner
+                        android:id="@+id/transaction_type_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/pale_blue_background"
+                        android:gravity="left"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/deadlines_and_fees_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/load_money_button"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/large_left_margin"
+                android:layout_marginStart="@dimen/large_left_margin"
+                android:background="@drawable/white_bottom_border"
+                android:text="@string/learn_about_deadlines_and_fees"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/load_money_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_grey"
+                android:text="@string/load_funds"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp"/>
+
+    </RelativeLayout>
+</ScrollView>

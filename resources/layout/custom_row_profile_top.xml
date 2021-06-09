@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_background"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/profile_account_icon"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_background"
+        android:layout_toRightOf="@+id/option_image">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/profile_placeholder" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:gravity="left"
+            android:text="@string/user_name"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/receipt_user_nick"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/profile_name"/>
+
+    </RelativeLayout>
+</RelativeLayout>

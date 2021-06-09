@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/colorPrimary"/>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:id="@+id/report_detail_graph"
+        />
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp">
+
+        <TextView
+                android:id="@+id/amount_month"
+                android:text=""
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/div"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <TextView
+                android:id="@+id/last_month"
+                android:text="@string/last_month"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="16dp"
+                android:layout_below="@+id/amount_month"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+        />
+
+        <View
+                android:id="@+id/div"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:id="@+id/amount_period"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="82dp"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/last_year"
+                android:text="@string/receipt_report"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:paddingTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@+id/amount_period"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/statement"
+                android:layout_below="@+id/last_month"
+                android:text="@string/daily_extract"
+                android:textColor="@color/light_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="32dp"/>
+
+        <ListView
+                android:id="@+id/report_monthly_statement_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/statement"
+                android:layout_alignLeft="@+id/amount_month"
+                android:layout_alignStart="@+id/amount_month" />
+    </RelativeLayout>
+</LinearLayout>

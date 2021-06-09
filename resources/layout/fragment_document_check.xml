@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/confirm_document_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/confirm_identity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/needs_to_confirm_identity"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/send_document_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_document_text"
+            android:layout_below="@+id/confirm_identity_text"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/analyzing_documents_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/waiting_clock_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_waiting_clock"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analyzing_documents"
+            android:layout_toRightOf="@+id/waiting_clock_ic"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/approved_documents_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/approved_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_approved"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/documents_approved_message"
+            android:layout_toRightOf="@+id/approved_ic"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/documents_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_below="@+id/approved_documents_layout" />
+    
+    <ImageView
+        android:id="@+id/insert_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus_2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

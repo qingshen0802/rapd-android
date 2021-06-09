@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/partners_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_section"
+            android:visibility="gone">
+        <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#38b66c"
+                android:textColor="@color/white"
+                android:hint="Search"
+                android:textColorHint="@color/white"
+                android:padding="10dp"
+                android:maxLines="1"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/search_section"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <Button
+                    android:id="@+id/btn_tab_near"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textView4"
+                    android:background="@color/white"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/ic_browse_near"
+                    android:padding="4dp"
+                    android:text="@string/partners_near"
+                    android:textColor="@color/tab_inactive"
+                    android:textSize="10sp" />
+
+            <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/tab_inactive" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <Button
+                    android:id="@+id/btn_tap_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/ic_browse_discount"
+                    android:padding="4dp"
+                    android:text="@string/partners_shopping"
+                    android:textColor="@color/tab_inactive"
+                    android:textSize="10sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_inactive" />
+
+            <Button
+                    android:id="@+id/btn_tab_favorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/ic_browse_favorite"
+                    android:padding="4dp"
+                    android:text="@string/partners_favorites"
+                    android:textColor="@color/tab_inactive"
+                    android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_container"
+            android:layout_centerVertical="true" >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/near_partners_filter_container"
+                android:background="#ecf0f1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:id="@+id/filter_1"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:clickable="true"/>
+            <TextView
+                    android:id="@+id/separator"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tab_inactive"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:id="@+id/filter_2"
+                    android:padding="10dp"
+                    android:clickable="true"/>
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/near_partners_filter_container">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/near_partners_list"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

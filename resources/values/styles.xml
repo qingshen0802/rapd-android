@@ -1,0 +1,106 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorPrimary</item>
+    <item name="android:textColorPrimary">@color/black</item>
+    <item name="android:windowTranslucentStatus">true</item>
+
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+     <item name="windowActionBar">false</item>
+     <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+  <style name="grey_button">
+      <item name="android:background">@drawable/white_button</item>
+      <item name="android:gravity">center</item>
+  </style>
+
+  <style name="keyboard_button">
+      <item name="android:background">@drawable/button_white</item>
+      <item name="android:layout_width">0dp</item>
+      <item name="android:layout_weight">1</item>
+      <item name="android:layout_height">match_parent</item>
+      <item name="android:textSize">20sp</item>
+      <item name="android:textColor">@color/red_background</item>
+      <item name="customFont">roboto</item>
+  </style>
+
+  <style name="keyboard_image_button">
+      <item name="android:background">@drawable/button_dark_green</item>
+      <item name="android:layout_width">0dp</item>
+      <item name="android:layout_weight">1</item>
+      <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="blue_button">
+      <item name="android:background">@drawable/facebook_button</item>
+      <item name="android:gravity">center</item>
+  </style>
+
+  <style name="blue_twitter_button">
+      <item name="android:background">@drawable/twitter_button</item>
+      <item name="android:gravity">center</item>
+  </style>
+
+  <style name="alpha_button">
+      <item name="android:background">@drawable/alpha_button</item>
+      <item name="android:gravity">center</item>
+  </style>
+
+  <style name="login_button">
+      <item name="android:background">@drawable/login_button</item>
+      <item name="android:gravity">center</item>
+  </style>
+
+  <style name="red_button">
+      <item name="android:background">@drawable/red_button</item>
+      <item name="android:gravity">center</item>
+      <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="white_spinner" parent="Widget.AppCompat.Spinner">
+      <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
+      <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+      <item name="android:dropDownVerticalOffset">0dip</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+      <item name="android:windowActionBar">false</item>
+      <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="BottomToUpTheme" parent="Theme.AppCompat.Light.Dialog">
+      <item name="android:windowAnimationStyle">@style/BottomToUpAnimation.Window</item>
+  </style>
+
+  <style name="BottomToUpAnimation.Window" parent="@android:style/Animation.Activity">
+      <item name="android:windowEnterAnimation">@anim/bottom_to_up</item>
+  </style>
+
+  <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+    <item name="android:textColor">@drawable/primary_color_statelist</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <!-- ToolBar -->
+  <style name="ToolBarStyle" parent="Theme.AppCompat">
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:textColorSecondary">@android:color/white</item>
+    <item name="actionMenuTextColor">@android:color/white</item>
+  </style>
+</resources>

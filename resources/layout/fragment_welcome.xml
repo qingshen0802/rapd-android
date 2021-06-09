@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fb="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white">
+
+    <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    <TextView
+            android:id="@+id/intro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/come_on"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="3"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sign_in_facebook_button"
+            android:layout_below="@+id/intro_text"
+            android:src="@drawable/wallet"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" />
+
+    <Button
+            android:id="@+id/sign_in_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            style="@style/blue_button"
+            android:textColor="@color/white"
+            android:text="@string/login_facebook"
+            android:textAllCaps="false"
+            android:layout_above="@+id/sign_up_button"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            style="@style/red_button"
+            android:textColor="@color/white"
+            android:text="@string/sign_up_button"
+            android:textAllCaps="false"
+            android:layout_above="@+id/sign_in_button"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            style="@style/login_button"
+            android:textColor="@color/light_grey"
+            android:text="@string/sign_in_button"
+            android:textAllCaps="false"
+            android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

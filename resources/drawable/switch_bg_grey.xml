@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_checked="true" android:state_focused="true">
+      <bitmap android:src="@drawable/ic_switch_on"
+              android:tint="@color/colorPrimary" />
+    </item>
+    <item   android:state_checked="true" android:state_focused="false" >
+      <bitmap android:src="@drawable/ic_switch_on"
+              android:tint="@color/colorPrimary" />
+    </item>
+    <item  android:state_checked="false"  android:state_pressed="true" >
+      <bitmap android:src="@drawable/ic_switch_off_grey"/>
+    </item>
+    <item  android:state_checked="false" android:state_focused="false">
+      <bitmap android:src="@drawable/ic_switch_off_grey"/>
+    </item>
+</selector>

@@ -1,0 +1,121 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/slip_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_slip_code"
+            android:textColor="@color/grey_letters"/>
+
+        <EditText
+            android:id="@+id/bank_slip_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slip_code"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/grey_bottom_border"
+            android:enabled="false"
+            android:maxLines="2"
+            android:textColor="@color/black"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/value_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank_slip_code"
+            android:layout_toLeftOf="@+id/divider"
+            android:text="@string/value"
+            android:textColor="@color/grey_letters"/>
+
+        <EditText
+            android:id="@+id/bank_slip_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_text"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/divider"
+            android:background="@drawable/grey_bottom_border"
+            android:enabled="false"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/expiration_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_slip_code"
+            android:layout_toRightOf="@+id/divider"
+            android:text="@string/expiration"
+            android:textColor="@color/grey_letters"/>
+
+        <EditText
+            android:id="@+id/bank_slip_expiration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expiration_text"
+            android:layout_marginBottom="40dp"
+            android:layout_toRightOf="@+id/divider"
+            android:background="@drawable/grey_bottom_border"
+            android:enabled="false"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_container"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/large_left_margin"
+        android:paddingStart="@dimen/large_left_margin">
+
+        <TextView
+            android:id="@+id/send_bank_slip_to_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/send_bank_slip_to_email"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/time_to_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/after_confirm"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_payment_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/large_left_margin"
+        android:background="@drawable/red_button"
+        android:text="ok"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

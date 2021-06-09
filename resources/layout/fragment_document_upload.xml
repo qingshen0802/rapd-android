@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evidentiary_documents_send_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/send_images_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_images_txt"
+        android:textColor="@color/light_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/send_document_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_images_text"
+        android:visibility="visible">
+        
+        <ImageView
+            android:id="@+id/front_document_ic_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upload"
+            android:layout_centerVertical="true"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/front_document_ic_status"
+            android:layout_centerVertical="true"
+            android:id="@+id/front_text">
+        <TextView
+            android:id="@+id/front_document_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_front"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/front_document_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rg_cng_rne"
+            android:layout_below="@+id/front_document_status"
+            android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/soft_grey"
+            android:layout_below="@+id/front_text"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/front_document_ic_status"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/send_document_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_document_front"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back_document_ic_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upload"
+            android:layout_centerVertical="true"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_document_ic_status"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_text">
+            <TextView
+                android:id="@+id/back_document_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_back"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/back_document_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rg_cng_rne"
+                android:layout_below="@+id/back_document_status"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/soft_grey"
+            android:layout_below="@+id/back_text"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/back_document_ic_status"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:range="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_blue_background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.rapdin.all_fragments.RequestValueFragment">
+
+    <LinearLayout
+        android:id="@+id/request_value_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_left_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/wallet_word"
+                android:textColor="@color/light_grey"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/currency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="R$ - Real"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/change_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/change_wallet"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/withdraw_instructions"
+                android:textColor="@color/pale_blue_text"
+                android:textSize="14sp"
+                app:customFont="roboto"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/donut_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/request_value_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+
+                android:id="@+id/donut_progress"
+                style="style/DonutProgress"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:rotation="-90"
+                android:layout_centerHorizontal="true"
+                app:donut_finished_color="@color/red_background"
+                app:donut_finished_stroke_width="25dp"
+                app:donut_progress="0"
+                app:donut_text_color="#00000000"
+                app:donut_unfinished_color="#485b67"
+                app:donut_unfinished_stroke_width="25dp"
+                />
+
+            <com.bozapro.circularsliderrange.CircularSliderRange
+                android:id="@+id/circular_slider"
+                android:layout_width="255dp"
+                android:layout_height="255dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:rotation="-90"
+                android:visibility="gone"
+                range:arc_color="@color/red_background"
+                range:arc_dash_size="25dp"
+                range:border_color="@color/circular_slider_dash"
+                range:border_thickness="25dp"
+                range:end_angle="0"
+                range:end_thumb_color="@color/red_background"
+                range:end_thumb_size="25dp"
+                range:start_angle="0"
+                range:start_thumb_size="0dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/request_value_selected_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:minWidth="60dp"
+                    android:singleLine="true"
+                    android:hint="@string/zero_value"
+                    android:textColorHint="@color/red_background"
+                    android:textColor="@color/red_background"
+                    android:textDirection="ltr"
+                    android:textSize="26sp"/>
+
+                
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/request_value_selected_value"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9ba5ac"
+                android:textSize="18sp"/>
+            
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/withdraw_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/large_left_margin"
+        android:layout_marginStart="@dimen/large_left_margin"
+        android:background="@drawable/red_button"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/request"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</RelativeLayout>

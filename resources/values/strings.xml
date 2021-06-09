@@ -1,0 +1,636 @@
+<resources>
+    <string name="app_name">Android Recipe</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_sign_up">Sign up</string>
+
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="save">Salvar</string>
+    <string name="loading">Carregando...</string>
+    <string name="facebook_app_id">173075966512385</string>
+    <string name="fb_login_protocol_scheme">fb173075966512385</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in or Sign up with Facebook</string>
+    <string name="success">Sucesso</string>
+    <string name="error">Erro</string>
+    <string name="pagarme_test_key">ek_test_bexrqguEPDJfOYa1wR51HgOFsFR6QI</string>
+    <string name="pagarme_prod_key">ek_live_ZCZjG9HD9slSosSMijt7Xn1z3v4vHT</string>
+    
+    <!-- Help -->
+    <string name="help_subtitle">Somos a Tratto</string>
+    <string name="help_desc">Tratto é uma carteira de pagamentos multi-moedas que nasceu por acreditarmos em uma necessária desintermediação financeira.</string>
+    <string name="help_visit">Visite nosso site e saiba mais</string>
+    <!-- End -->
+
+    <!-- Contact Details -->
+    <string name="talk_to_us">Quer falar com a gente?</string>
+    <string name="question_or_sugestions">Dúvidas, sugestões ou reclamações? \n Queremos ouvi-lo.</string>
+    <string name="send_message">Escreva sua mensagem</string>
+    <string name="send">Enviar</string>
+    <!-- End -->
+    
+    <!-- Settings -->
+    <string name="sms">SMS</string>
+    <!-- End -->
+
+    <!--Titles-->
+    <string name="edit_cc_title">Editar Cartão</string>
+    <string name="add_cc_title">Novo Cartão</string>
+    <string name="credit_cards_title">Meus Cartões</string>
+    <string name="withdraw_title">Resgatar</string>
+    <string name="wallet_title">Dashboard</string>
+    <string name="choose_wallet_title">Escolha a carteira para essa transação</string>
+    <string name="to_credit_title">Creditar</string>
+    <string name="to_confirm_title">Confirmar</string>
+    <string name="did_credit_title">Creditado</string>
+    <string name="savings_title">Rendimentos</string>
+    <string name="reports_title">Relatórios</string>
+    <string name="monthly_savings_title">Rendimentos Mensais</string>
+    <string name="network">Rede</string>
+    <string name="nearest_shops_titles">Sugestões</string>
+    <string name="clubs">Clubes</string>
+    <string name="verify_code">Confirme sua conta</string>
+    <string name="pay_or_request_title">Enviar ou Solicitar</string>
+    <string name="pay_or_request_finished_dialog_title">Envio Realizado</string>
+    <string name="choose_wallet_title">Portfolio</string>
+    <string name="deadlines_and_fees_title">Prazos e Tarifas</string>
+    <string name="select_payment_type_title">Destino de Resgate</string>
+    <string name="withdrew_successfully_title">Resgate Realizado</string>
+    <string name="convert_currency_title">Converter Moeda</string>
+    <string name="bank_config_title">Meus dados bancários</string>
+    <string name="contact_details_title">Fale Conosco</string>
+    <string name="help_title">Ajuda</string>
+    <string name="help_title_two">Sobre nós</string>
+    <!--End-->
+    
+    <!-- Welcome Fragment -->
+    <string name="sign_up_button"><b>Não tem Facebook?</b> \n Crie uma conta com seu email</string>
+    <string name="login_facebook"><b>Tem Facebook?</b> \n Use-o para acessar ou criar sua conta</string>
+    <string name="sign_in_button">
+        <![CDATA[Já tem uma conta? <u><font color=#F15E4F>Acessar</font></u>]]>
+    </string>
+    <string name="fb_pw">Password</string>
+    <string name="fb_pw_confirm">Password Confirm</string> 
+    <string name="come_on">Uma carteira digital\ncomo você nunca\nviu antes.</string>
+    <!-- End -->
+    
+    <!-- Sign Up -->
+    <string name="your_name">Defina seu nome de usuário</string>
+    <string name="your_full_name">Nome completo</string>
+    <string name="your_phone">Seu telefone celular</string>
+    <string name="your_email">E-mail</string>
+    <string name="birthday">Sua data de nascimento</string>
+    <string name="your_cpf">Seu CPF</string>
+    <string name="name">Seu usuário (não pode ser mudado)</string>
+    <string name="full_name">Nome completo</string>
+    <string name="lastname">Sobrenome</string>
+    <string name="email">Seu e-mail</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirme a senha</string>
+    <string name="terms_of_use">Li e aceito os <u><b>termos de uso</b></u></string>
+    <string name="under_sixteen">Tenho menos de 16 anos</string>
+    <string name="register">CADASTRAR</string>
+    <string name="shop_question">Você é empresário?</string>
+    <string name="no_shop_button">Não cadastrar uma conta Lojista</string>
+    <string name="shop_sign_up_title">Tratto para lojistas</string>
+    <string name="shop_text">Se você possui um estabelecimento e tem problemas com troco ou fluxo de caixa, não deixe de criar uma conta conosco e comece a receber e enviar pagamentos agora mesmo.</string>
+    <string name="shop_button">Cadastrar conta Lojista</string>
+    <string name="next">CONTINUAR</string>
+    <string name="fantasyName">Nome fantasia</string>
+    <string name="companyName">Defina um nome de usuário para essa loja</string>
+    <string name="companyNumber">CNPJ</string>
+    <string name="companyArea">Área de atuação</string>
+    <string name="legally_responsible">Sou legalmente responsável pela empresa</string>
+    <string name="emailAddress">E-mail</string>
+    <string name="phoneNumber">Telefone da empresa</string>
+    <string name="state">Estado</string>
+    <string name="city">Cidade</string>
+    <string name="address">Endereço</string>
+    <string name="borough">Bairro</string>
+    <string name="company_description">Descrição da empresa</string>
+    <string name="accept">Eu aceito os </string>
+    <string name="terms">termos de uso</string>
+    <string name="cadastre">Cadastrar</string>
+    <string name="cellphone">Celular</string>
+    <string name="sign_up">Cadastre-se</string>
+    <string name="sign_in">Acesse sua conta</string>
+    <string name="complete_profile">Completar Perfil</string>
+    <string name="new_shop">Novo Perfil</string>
+    <!-- End -->
+    
+    <!-- Login -->
+    <string name="phone_email">Email ou celular com DDD</string>
+    <string name="user_or_email">Digite seu e-mail</string>
+    <string name="your_password">Digite sua senha</string>
+    <string name="forgot_password"><u><b>Esqueci minha senha</b></u></string>
+    <string name="forgot_password_title">Esqueci minha senha</string>
+    <string name="access">ACESSAR</string>
+    <string name="invalid_name">Usuário ou email inválido</string>
+    <string name="invalid_password">Senha inválida</string>
+    <string name="access_account">Acesse sua conta</string>
+    <string name="to_continue">Continuar</string>
+    <!-- End -->
+    
+    <!-- Forgot Password -->
+    <string name="type_your_cpf">Para prosseguir, precisamos confirmar seu CPF</string>
+    <string name="type_your_phone_number">Para prosseguir, precisamos primeiramente confirmar seu celular.</string>
+    <string name="cpf_registered">CPF cadastrado</string>
+    <string name="phone_number_registered">Celular cadastrado</string>
+    <string name="insert_and_confirm_new_password">Insira e confirme sua nova senha</string>
+    <string name="redefine_password">Redefinir Senha</string>
+    <string name="fill_cpf_field_correctly">Preencha o campo CPF corretamente!</string>
+    <!-- End -->
+    
+    <!-- Verify Number -->
+    <string name="phone_verify">Verifique sua conta</string>
+    <string name="confirm_number_to_continue_signing_up">Para prosseguir com seu cadastro, precisamos primeiro confirmar seu telefone.</string>
+    <string name="code_already_received">Já recebi o código</string>
+    <string name="ddd">DDD</string>
+    <string name="cellphone_number">Seu número de celular</string>
+    <string name="already_registered">
+        <![CDATA[<u>JÁ TENHO UMA CONTA</u>]]>
+    </string>
+    <!-- End -->
+
+    <!-- Verify Code Fragment -->
+    <string name="send_sms">Um código de 6 dígitos foi enviado para o número cadastrado de final %s. Insira-o abaixo:</string>
+    <string name="type_code">Digite o código recebido</string>
+    <string name="invalid_number">Digite um número de telefone válido</string>
+    <string name="changed_my_number">Alteração de Telefone</string>
+    <string name="no_receive_sms">
+        <![CDATA[<u>NÃO RECEBI NENHUM SMS</u>]]>
+    </string>
+    <string name="confirm_resend_sms">Deseja enviar o código para o número informado novamente?</string>
+    <string name="sms_not_match">Código incorreto.</string>
+    <string name="confirm_your_number">Confirme seu telefone</string>
+    <string name="number_changed">Número alterado</string>
+    <string name="sms_resent">SMS reenviado</string>
+    <string name="email_code">Um código de 6 dígitos foi enviado para seu email.</string>
+    <!-- End -->
+    
+    <!--Responsible SignUp-->
+    <string name="responsible_signup">Cadastrar responsável</string>
+    <string name="responsible_name">Nome completo do responsável</string>
+    <string name="responsible_cpf">CPF do Responsável</string>
+    <string name="responsible_email">Email do Responsável</string>
+    <!--End-->
+    
+    <!-- Change Password -->
+    <string name="change_pw_title">Redefinir senha</string>
+    <string name="change_old_pw">Digite sua senha atual</string>
+    <string name="change_new_pw">Digite a nova senha</string>
+    <string name="change_confirm_pw">Confirme sua senha</string>
+    <string name="change_save_button">SALVAR</string>
+    <!-- End -->
+
+    <!-- Receipt -->
+    <string name="receipt_bar_title">Recibo</string>
+    <string name="receipt_user_name">Starbucks Iguatemi</string>
+    <string name="receipt_user_nick"></string>
+    <string name="receipt_user_document">CPNJ: 120.012.029/0001-34</string>
+    <string name="receipt_value_text">VOCÊ PAGOU</string>
+    <string name="receipt_value_business_text">VALOR</string>
+    <string name="receipt_value">R$ 9,90</string>
+    <string name="receipt_date_text">DATA</string>
+    <string name="receipt_date">19 de Julho ás 12:00</string>
+    <string name="receipt_location_text">LocalizaÇÃo</string>
+    <string name="receipt_street">Rua Iguatemi, 53 loja 12</string>
+    <string name="receipt_city">Iguatemi -São Paulo/SP</string>
+    <string name="receipt_zipcode">CEP.03712-010</string>
+    <string name="receipt_tip_title">Tipo</string>
+    <string name="receipt_tip_value">#pagamento</string>
+    <string name="receipt_authorization_text">AUTORIZAÇÃO</string>
+    <string name="receipt_authorization">0912-0129-0129-0122</string>
+    <!-- End -->
+    
+    <!--Wait List-->
+    <string name="wait_list">Lista de Espera</string>
+    <string name="ahead_number">%s</string>
+    <string name="behind_number">%s</string>
+    <string name="ahead_text">Pessoas na sua frente</string>
+    <string name="behind_text">Atrás de você.</string>
+    <string name="share_info">A demanda tem sido grande, você pode subir na lista compartilhando-nos.</string>
+    <string name="share_button">SUBIR POSIÇÕES</string>
+    <string name="share">Compartilhar</string>
+    <!--End-->
+    
+    <!-- Terms of use -->
+    <string name="terms_of_use_title">Termos de uso</string>
+    <string name="text_terms_of_use">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum irirue dolor in hendrerit in vulputate velit esse molestie consequat, vel ilum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        <br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum irirue dolor in hendrerit in vulputate velit esse molestie consequat, vel ilum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</br></br>
+            <br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed dam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum irirue dolor in hendrerit in vulputate velit esse molestie consequat, vel ilum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</br></br></string>
+    <!-- End -->
+    
+    <!--MyWallet-->
+    <string name="last_register">ÚLTIMO REGISTRO</string>
+    <string name="minutes">min atrás</string>
+    <string name="normal">Normal</string>
+    <string name="all_registers">Todos os Registros</string>
+    <string name="did_atend">VOCE FOI ATENDIDO POR</string>
+    <string name="share">COMPARTILHE SUA EXPERIENCIA</string>
+    <string name="your_balance">Todos</string>
+    <string name="receipts">Recebimentos</string>
+    <string name="payments">Pagamentos</string>
+    <string name="balance_in_currency">saldo na moeda</string>
+    <string name="currency_real">Real</string>
+    <string name="currency_us">Dólar</string>
+    <string name="currency_euro">Euro</string>
+    <string name="currency_bitcoin">Bitcoin</string>
+    <!--End-->
+
+    <!-- Choose Wallet -->
+    <string name="currency_us">Dólar</string>
+    <string name="currency_euro">Euro</string>
+    <!-- END -->
+    
+    <!-- Main Fragment -->
+    <string name="last_seven_days">Últimos 7 dias</string>
+    <string name="last_fifteen_days">Últimos 15 dias</string>
+    <string name="last_thirty_days">Últimos 30 dias</string>
+    <string name="last_sixty_days">Últimos 60 dias</string>
+    <string name="last_ninety_days">Últimos 90 dias</string>
+    <string name="solicit_send_payment">Solicitar/Enviar</string>
+    <string name="search">Buscar</string>
+    <string name="menu_benefits">Beneficios</string>
+    <string name="value_text">Saldo da sua conta</string>
+    <string name="spinner_text">Período</string>
+    <string name="tab_main_one">Todos</string>
+    <string name="tab_main_two">Pagamentos</string>
+    <string name="tab_main_three">Recebimentos</string>
+    <string name="list_view_name">Hoje</string>
+
+    <!-- END -->
+    
+    <!-- Tab Content -->
+      <string name="partner_title">Rede</string>
+      <string name="partners_near">MAIS PRÓXIMAS</string>
+      <string name="partners_shopping">CLUBE DE DESCONTO</string>
+      <string name="partners_favorites">FAVORITOS</string>
+    <!-- END -->
+    
+    <!-- Categories -->
+      <string name="partner_filter_title">Categorias</string>
+      <string name="notification_filter_title">Filtrar</string>
+      <string name="benefits">BENEFÍCIOS</string>
+      <string name="payment_categories">CATEGORIA DE PAGAMENTOS</string>
+    <!-- END -->
+
+    <!-- Pay or Request -->
+    <string name="wallet_word">Carteira</string>
+    <string name="change_wallet">Alterar Carteira</string>
+    <string name="user_name"><b>@%s</b></string>
+    <string name="default_text">Padrão</string>
+    <string name="finish">Finalizar</string>
+    <string name="new_payment">Novo pagamento</string>
+    <string name="new_request">Nova solicitação</string>
+    <string name="share_text">Compartilhar:</string>
+    <string name="pay_to_store">Enviar ou Solicitar</string>
+    <string name="pay_or_request_search_tip">Digite o @usuario, telefone ou email</string>
+    <string name="pay_or_request_button">Toque aqui para gerar uma solicitação de pagamento sem especificar um usuário. Será gerado um link compartilhável.</string>
+    <string name="pay_or_request_user_search_tip">Digite para pesquisar</string>
+    <string name="no_credits_for_establishment">Você não tem créditos para utilizar nessa loja @%1$s. %2$s</string>
+    <string formatted="false" name="you_got_credits_on_establishment">Você tem %s em crédito(s) nessa loja @%s. &lt;u>Clique aqui&lt;/u> para utilizá-lo, ou acumule mais.</string>
+    <string name="near_establishments">Sugestões</string>
+    <string name="value">Valor</string>
+    <string name="account_word">Conta</string>
+    <string name="comments">Comentários</string>
+    <string name="send_payment">ENVIAR</string>
+    <string name="request_payment">SOLICITAR</string>
+    <string name="request_sent">Cobrança enviada</string>
+    <string name="successfully_sent_payment">Você enviou %1$s para %2$s.</string>
+    <string name="successfully_requested_payment">Você solicitou %1$s de %2$s.</string>
+    <string name="successfully_requested_open_payment">Você está solicitando um pagamento de %1$s. Use o link abaixo para compartilhar a cobrança.</string>
+    <string name="no_credits_used">Você está solicitando uma cobrança em aberto de %1$s. Utilize o link abaixo para compartilha-la.</string>
+    <string name="connect_nfc">Conectar NFC</string>
+    <string name="connect_bluetooth">Conectar Bluetooth</string>
+    <string name="connect_nfc_instructions">Aproxime o celular da pessoa que você irá pagar com o app do Tratto aberto. Nós iremos reconhecer o usuário.</string>
+    <string name="connect_bluetooth_instructions">Ative o Bluetooth e aproxime o celular da pessoa que você irá pagar com o app do Trato aberto. Nós iremos reconhecer o usuário. </string>
+    <string name="successfully_sent_dormant_payment">Você enviou %1$s para um usuário que não tem uma conta do Tratto. Vamos enviar um convite por SMS para esse usuário. Se ele não receber o seu valor em 7 dias, o valor será estornado novamente para sua conta.</string>
+    <string name="user_has_no_account">O usuário informado não tem uma conta no Tratto. Ele receberá um SMS informando sobre o pagamento.</string>
+    <string name="no_balance_title">Saldo Insuficiente</string>
+    <string name="no_balance">Você não pode enviar pagamentos porque não tem saldo em sua conta.</string>
+    <!-- END -->
+
+    <!-- Reports -->
+    <string name="report_desc_alt">Extrato de compras</string>
+    <string name="report_desc">Acessar extrato</string>
+    <string name="report_text_alt">Histórico de compras</string>
+    <!-- End -->
+
+    <!-- Report Detail -->
+    <string name="no_data">No Transactions From This Period</string>
+    <string name="last_month">ÚLTIMO ANO</string>
+    <string name="receipt_report">TRANSAÇÕES</string>
+    <string name="daily_extract">Extrato</string>
+    <!-- End -->
+
+    <!-- Report Month -->
+    <string name="no_value">0</string>
+    <string name="waiting">Aguardando</string>
+    <string name="paid">Pago</string>
+    <string name="canceled">Cancelado</string>
+    <string name="transaction_waiting">TransactionRequest</string>
+    <string name="transaction_paid">Approved</string>
+    <string name="transaction_canceled">Declined</string>
+
+    <!-- Report History -->
+    <string name="report_history_title">Histórico de compras</string>
+    <!-- End -->
+    
+    <!--Profile-->
+    <string name="option_name"><b>%s</b></string>
+    <string name="option_info">%s</string>
+    <string name="your_account">Meu Perfil</string>
+    <string name="your_account_info">Dados Pessoais, endereços, etc</string>
+    <string name="your_net">Meus Contatos</string>
+    <string name="your_net_info">Suas indicações, funcionários, etc</string>
+    <string name="your_money">Operações Financeiras</string>
+    <string name="your_money_info">Carregar dinheiro, pagar contas, etc</string>
+    <string name="configs">Configurações</string>
+    <string name="configs_info">Altere suas configurações de segurança, etc</string>
+    <string name="help">Ajuda</string>
+    <string name="help_info">Está com problemas? Nós te ajudamos</string>
+    <string name="about_us">Tratto</string>
+    <string name="about_us_info">Um pouco mais sobre nós</string>
+
+    <string-array name="options">
+        <item>Meu Perfil</item>
+        <item>Meus Contatos</item>
+        <item>Operações Financeiras</item>
+        <item>Configurações</item>
+        <item>Ajuda</item>
+        <item>Tratto</item>
+    </string-array>
+    <!--End-->
+
+    <!-- Load Money -->
+    <string name="load_funds">Carregar carteira</string>
+    <string name="currency">Moeda</string>
+    <string name="amount_to_load">Valor desejado</string>
+    <string name="form_of_payment">Forma de Pagamento</string>
+    <string name="amount_in_real">%s em Real Brasileiro</string>
+    <string name="learn_about_deadlines_and_fees">Conheça nossas tarifas e prazos</string>
+    <!-- End -->
+
+    <!-- Convert Currency -->
+    <string name="convert">Converter</string>
+    <string name="desired_value">Valor desejado</string>
+    <string name="money_to_convert">Moeda a converter</string>
+    <string name="converted_value">Valor convertido</string>
+    <!-- End -->
+
+    <!-- Deadlines and Fees -->
+    <string name="load_funds_label">Carregar Carteira:</string>
+    <string name="free_by_doc_ted">- Grátis via DOC/TED</string>
+    <string name="free_by_ticket">- Grátis via Boleto Bancário</string>
+    <string name="credit_card_fee">- 5% de acréscimo via Cartão de Crédito</string>
+    <string name="load_max">Valor máximo R$ 1.000,00.</string>
+    <string name="load_min">Valor mínimo R$ 10,00.</string>
+    <string name="payments_label">Pagamentos:</string>
+    <string name="pay_max">Valor máximo R$ 1.000,00.</string>
+    <string name="pay_min">Valor mínimo R$ 0,01.</string>
+    <string name="time_info">O valor é adicionado automaticamente com cartão de crédito. Em transferência bancária o prazo é de até 24h, e por boleto de até 2 dias úteis.</string>
+    <!-- End -->
+
+    <!-- Withdraw -->
+    <string name="current_balance">Seu saldo atual</string>
+    <string name="request">Solicitar</string>
+    <string name="withdraw_instructions">Arraste o círculo, ou clique no valor para escolher o valor do saque:</string>    
+    <string name="withdraw_success_message">Você solicitou %s</string>
+    <string name="withdraw_success_message_2">O valor será transferido para a opção desejada automaticamente.</string>
+    <string name="zero_value">0,00</string>
+    <!-- End -->
+
+    <!-- Select Payment Type -->
+    <string name="bank_transfer">Transferência Bancária</string>
+    <string name="bank_transfer_delay_message">Disponível em até 3 dias</string>
+    <string name="debit_card">Cartão de Débito</string>
+    <string name="debit_card_delay_message">Disponível em até 1 dia</string>
+    <!-- End -->
+
+    <!-- Bank Transfer Fragment -->
+    <string name="conclude">concluir</string>
+    <string name="transfer_summary">Realize a transferência no valor de %s até 24h para a conta abaixo. O valor será creditado na sua conta em até 24h após a transferência. Envie-nos a foto do seu comprovante para agilizar o processo.</string>
+    <string name="choose_bank_for_details">Escolha o banco para ver os dados bancários</string>
+    <string name="branch">Ag: %s</string>
+    <string name="bank_identifier">Identificador: %s</string>
+    <string name="company_text">KCAPT SERVICOS DE PAG. LTDA</string>
+    <string name="cnpj_number">CNPJ: %s</string>
+    <string name="upload_reciept">Enviar Comprovante</string>
+    <!-- End -->
+
+    <!-- Upload Reciept -->
+    <string name="upload_reciept_title">Comprovante</string>
+    <string name="upload_images">Enviar imagens</string>
+    <string name="upload_reciept_description">Envie uma foto do comprovante</string>
+    <!-- end -->
+
+    <!-- Bank Config -->
+    <string name="bank_config_warning">Por questões de segurança não realizamos transferências para contas com CPF ou CNPJ diferentes dos utilizados no cadastro</string>
+    <string name="bank_config_register_title">Cadastre seus dados</string>
+    <string name="bank_config_simple_title">Banco</string>
+    <string name="bank_config_type">Tipo de conta</string>
+    <string name="bank_config_agency">Agência</string>
+    <string name="bank_config_account">Dígito</string>
+    <string name="bank_config_check_account">Conta corrente</string>
+    <string name="bank_config_error_dialog">Preencha todos os campos</string>
+    <string name="bank_config_option_select">Selecione</string>
+    <string name="bank_config_option_checking">Conta Corrente</string>
+    <string name="bank_config_option_savings">Poupança</string>
+    <string name="bank_config_option_one">Chase</string>
+    <string name="bank_config_option_two">Wells Fargo</string>
+    <string name="bank_config_option_three">Credit Union</string>
+    <!-- end -->
+
+    <!-- Bank Slip Fragment -->
+    <string name="slip_code">Código do Boleto</string>
+    <string name="expiration">Data de Validade</string>
+    <string name="bank_slip_code">Código do Boleto</string>
+    <string name="send_bank_slip_to_email" formatted="false">Enviamos o boleto no valor de %s com o vencimento para do dia %s, para o seu email: %s.</string>
+    <string name="after_confirm">Seus creditos serão adicionados em sua conta, em até 2 dias após a confirmação de pagamento do boleto.</string>
+    <string name="confrm_payment">Confirmar Pagamento</string>
+    <string name="cancel_payment">Cancelar Pagamento</string>
+    <string name="bank_slip">Boleto Bancário</string>
+    <!-- End -->
+
+    <!-- My Credit Cards -->
+    <string name="edit_card_message">Nós não armazenamos os dados do seu cartão. Eles são enviados criptografados para a operadora.
+        Por essa razão, você não pode editar nenhuma informação.
+        Caso necessário, apague as informações do seu cartão e insira novamente.</string>
+    <string name="delete">Apagar</string>
+    <string name="or_insert_manually">Ou insira os dados manualmente:</string>
+    <string name="card_name">Nome como no cartão</string>
+    <string name="invalid_card_number">Número do cartão inválido</string>
+    <string name="due_date">Data de vencimento</string>
+    <string name="security_code">CVV</string>
+    <string name="insert_card_manually"><u>Inserir cartão manualmente</u></string>
+    <string name="image_will_be_deleted">A imagem do seu cartão é utilizada somente para facilitar o cadastro.
+        A mesma será deletada automaticamente após o cadastro.</string>
+    <string name="card_number">Número do cartão</string>
+    <string name="obstructed_card_number">XXXX XXXX XXXX %s</string>
+    <!-- End -->
+
+    <!-- Transaction Request Complete -->
+    <string name="transaction_success_message">Compra realizada com sucesso. Enviamos um email para você com o detalhes dessa compra. \n\nNenhuma informação foi armazenada para sua segurança. \n\nObrigado!</string>
+    <string name="transaction_failure_message">Ops! Algo deu errado com a sua compra, favor tentar novamente. Se o problema persistir entre em contato com a empresa responsável para maiores informações. \n\nObrigado!</string>
+    <!-- end -->
+    
+    <!-- Edit Profile -->
+    <string name="cpf">CPF (não pode ser alterado)</string>
+    <string name="cnpj">CNPJ (não pode ser alterado)</string>
+    <string name="birth_date">Data de nascimento</string>
+    <!-- end -->
+    
+    <!-- My Number -->
+    <string name="my_number">Meu Número</string>
+    <string name="bound_number"><b>Este é o número de celular vinculado com a sua conta.</b></string>
+    <string name="change_number"><u>Alterar número</u></string>
+    <string name="register_a_number">Cadastre um número</string>
+    <string name="no_number">Você ainda não tem nenhum telefone cadastrado</string>
+    <!-- End -->
+    
+    <!-- Address -->
+    <string name="id_name">Nome para identificação</string>
+    <string name="street">Rua, avenida, estrada...</string>
+    <string name="number">Número</string>
+    <string name="supplement">Complemento</string>
+    <string name="zip">CEP</string>
+    <string name="delivery_address">Usar o mesmo endereço para entrega.</string>
+    <string name="to_continue">Continuar</string>
+    <string name="belong_to_card">Este endereço já está vinculado a um cartão de credito, exclua o cartão antes de prosseguir com esta ação.</string>
+
+    <string name="add_new_address">Novo endereço</string>
+    <string name="choose_address">Alterar Endereço</string>
+    <string name="address_deleted">Endereço apagado com sucesso!</string>
+    <string name="my_addresses">Meus endereços</string>
+    <string name="registered_addresses">Endereços Cadastrados</string>
+    <!-- End -->
+    
+    <!-- New Address -->
+    <string name="new_address">Novo endereço</string>
+    <string name="edit_address">Editar endereço</string>
+    <string name="address_description">Descrição do endereço</string>
+    <string name="identification_name">Nome para identificação</string>
+    <string name="identification_name_hint">Ex. Casa</string>
+    <string name="street_avenue">Rua, avenida, estrada, etc...</string>
+    <string name="use_same_address">Usar o mesmo endereço para entrega.</string>
+    <string name="erase">Apagar</string>
+    <string name="neighborhood">Bairro</string>
+    <!-- End -->
+    
+    <!-- ID Confirmation -->
+    <string name="id_confirmation">Confirmação de Identidade</string>
+    <string name="photos_to_verify_identity">Precisamos destas fotos para verificar sua identidade e autorizar o resgate.</string>
+    <string name="photo_front"><b>FRENTE</b>\n do RG, CNH ou RNE</string>
+    <string name="photo_back"><b>VERSO</b>\n do RG, CNH ou RNE</string>
+    <string name="data_saved_safely">Dados armazenados em <u>segurança</u>.</string>
+    <string name="success_withdrawal">Solicitação de resgate realizada com sucesso.</string>
+    <string name="fail_withdrawal">Falha ao resgatar créditos</string>
+    <string name="needs_to_confirm_identity"><b>Precisamos confirmar sua identidade para aprovar seus resgates.</b></string>
+    <string name="send_document_text">Você deve enviar uma foto do seu RG, CNH ou RNE. Esses dados são necessários para que possamos confirmar sua identidade e dados bancários. Continue para enviar as imagens.</string>
+    <string name="evidentiary_documents">Documentos comprobatórios</string>
+    <string name="send_images_txt">Enviar imagens</string>
+    <string name="document_approved">Documento aprovado</string>
+    <string name="document_declined">Documento rejeitado</string>
+    <string name="document_analyzing">Documento em análise</string>
+    <string name="front_approved">A frente do documento foi aprovado e você não precisa realizar nenhuma ação.</string>
+    <string name="back_approved">O verso do documento foi aprovado e você não precisa realizar nenhuma ação.</string>
+    <string name="front_declined">A frente do documento não foi aceito. A imagem não está legível, por favor, reenvie.</string>
+    <string name="back_declined">O verso do documento não foi aceito. A imagem não está legível, por favor, reenvie.</string>
+    <string name="front_analyzing">A frente do documento está sendo analisado. Você receberá uma resposta em breve.</string>
+    <string name="back_analyzing">O verso do documento está sendo analisado. Você receberá uma resposta em breve.</string>
+    <string name="rg_cng_rne">Do RG, CNH ou RNE</string>
+    <string name="send_front">Enviar Frente</string>
+    <string name="send_back">Enviar Verso</string>
+    <string name="analyzing_documents">Estamos analisando os documentos enviados. Quando aprovado, os próximos resgates serão automáticos.</string>
+    <string name="documents_refused_title">Documento rejeitado</string>
+    <string name="documents_back_refused">O verso do documento não foi aceito. A imagem não está legível, por favor, reenvie.</string>
+    <string name="documents_front_refused">A frente do documento não foi aceita. A imagem não está legível, por favor, reenvie.</string>
+    <string name="documents_approved_title">Documento aprovado</string>
+    <string name="documents_approved_message">Documentos aprovados</string>
+    <string name="documents_front_accepted">A frente do documento foi aprovada e você não precisa realizar nenhuma ação.</string>
+    <string name="documents_back_accepted">O verso do documento foi aprovado e você não precisa realizar nenhuma ação.</string>
+    <string name="not_possible_to_send_documents">não foi possivel enviar seus documentos</string>
+    <!-- End -->
+
+    <!-- Nav Drawer -->
+    <string name="nav_wallet"> Dashboard </string>
+    <string name="nav_network"> Rede</string>
+    <string name="nav_payments"> Enviar ou Solicitar </string>
+    <string name="nav_notifications"> Atividades </string>
+    <string name="nav_profile"> Outras </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="notification_title"> Atividades </string>
+    <!-- End -->
+    
+    <!-- Establishment Details -->
+    <string name="see_on_map"><b>Ver no mapa</b></string>
+    <string name="telephone">Telefone</string>
+    <string name="hint_phone">(0xx11) 0800-08210</string>
+    <string name="shopping_club">Clube de Compras</string>
+    <string name="shopping_club_balance"><b>Saldo no Clube de Compras</b></string>
+    <string name="active_promotions"><b>PROMOÇÕES ATIVAS</b></string>
+    <string name="you_have_discounts">Você tem descontos</string>
+    <string name="use_your_discounts" formatted="false">Deseja utilizar %s de desconto?</string>
+    <string name="see_on_map"><b>Ver no mapa</b></string>
+    <string name="site">site</string>
+    <string name="do_payment">Fazer Pagamento</string>
+    
+    <!-- Employee List -->
+    <string name="employee_list_title"><b>"Seus Funcionários"</b></string>
+    
+    <!-- Settings -->
+    <string name="notification_settings_title"><b>Ativar notificações</b></string>
+    <string name="security_settings_title"><b>Segurança</b></string>
+    <string name="discount_club_setting_text"><b>Escolha o quanto você irá bonificar a cada R$ que o usuário gastar em suas compras</b></string>
+    <string name="bonus_settings_title"><b>Bonificação Automática</b></string>
+    <string name="bonus_setting_text"><b>Você ficou 60 dias sem realizar nenhuma transação e por essa razão sua bonificação automática foi desativada. Faça uma transação e ela será ativada novamente.</b></string>
+    <string-array name="notification_filter_types">
+        <item>Pagamentos</item>
+        <item>Recebimentos</item>
+        <item>Solicitações de pagamento</item>
+        <item>Avisos</item>
+        <item>Promoções</item>
+        <item>Mensagem</item>
+    </string-array>
+    
+    <string-array name="notification_filter_orders">
+        <item>Mais Recentes</item>
+        <item>Mais antigas</item>
+    </string-array>
+  
+    
+    <string-array name="partner_filter_currency">
+        <item>Dólar</item>
+        <item>Tratto Alimentação</item>
+        <item>Tratto Refeição</item>
+    </string-array>
+    
+    <string-array name="partner_filter_categories">
+        <item>Cafeteria</item>
+        <item>Sorveterias</item>
+        <item>Loja de Bolsas</item>
+        <item>Cafeteria</item>
+        <item>Sorveterias</item>
+    </string-array>
+    
+    <!-- Arrow Menu -->
+    <string name="logout">Logout</string>
+    <string name="access_another_profile">Access another profile</string>
+    <string name="create_new_profile">Create new profile</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

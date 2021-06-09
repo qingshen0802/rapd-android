@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:weightSum="1"
+>
+
+    <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_or_email"
+            android:textColor="@color/grey_letters"
+            android:layout_toRightOf="@+id/icon_placeholder"
+            android:textSize="18sp"
+    />
+
+    <ImageView
+            android:id="@+id/icon_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_placeholder"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/name_or_cpf"
+            android:layout_alignTop="@+id/name_or_cpf"/>
+
+    <EditText
+            android:id="@+id/name_or_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_bottom_border"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@+id/icon_placeholder"
+            android:layout_below="@+id/user_email"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="15dp"/>
+
+    <TextView
+            android:id="@+id/your_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_password"
+            android:textColor="@color/grey_letters"
+            android:layout_toRightOf="@+id/icon_padlock"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name_or_cpf"
+            android:textSize="18sp"/>
+
+    <ImageView
+            android:id="@+id/icon_padlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/padlock"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_alignBottom="@+id/password"
+            android:layout_alignTop="@+id/password"/>
+
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/icon_padlock"
+            android:layout_below="@id/your_password"
+            android:background="@drawable/grey_bottom_border"/>
+
+
+    <TextView
+            android:id="@+id/forgot_password"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_alignLeft="@+id/password"
+            android:layout_below="@+id/password"
+            android:textColor="@color/grey_letters"
+    />
+
+    <Button
+            android:id="@+id/login_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/to_continue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/red_button"/>
+
+</RelativeLayout>

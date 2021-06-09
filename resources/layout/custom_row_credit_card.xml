@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:id="@+id/card_layout"
+                android:background="@drawable/round_visa_background">
+
+    <ImageView
+            android:id="@+id/card_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/card_number_end"/>
+
+    <ToggleButton
+            android:id="@+id/toggle_alert"
+            android:layout_width="34dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/switch_bg"
+            android:checked="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+
+    <ImageView
+            android:id="@+id/card_flag"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_visa"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:id="@+id/card_number_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX XXXX XXXX 5240"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/card_flag"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:id="@+id/expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrado em 20/12/2015"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/card_number_end"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

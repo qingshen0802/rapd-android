@@ -1,0 +1,144 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+  <RelativeLayout
+          android:id="@+id/title_container"
+          android:layout_width="match_parent"
+          android:layout_height="144dp"
+          android:layout_below="@+id/profile_photo"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:layout_marginTop="-32dp"
+          android:background="@color/black">
+
+    <TextView
+            android:id="@+id/text_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_sub_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+  </RelativeLayout>
+
+  <RelativeLayout
+          android:id="@+id/profile_photo_back"
+          android:layout_width="72dp"
+          android:layout_height="72dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="32dp"
+          android:background="@drawable/circle_layout"
+  />
+
+  <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/profile_photo"
+          android:layout_width="64dp"
+          android:layout_height="64dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="36dp"
+          android:src="@drawable/profile_placeholder"
+          android:background="@android:color/transparent"
+  />
+
+  <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_alignParentBottom="false"
+          android:layout_below="@+id/sub_container"
+          android:layout_marginEnd="24dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:layout_marginStart="24dp"
+          android:background="@android:color/darker_gray" />
+
+  <RelativeLayout
+          android:id="@+id/sub_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/title_container"
+          android:padding="24dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/second_profile_photo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="false"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="18dp"
+            android:layout_toEndOf="@+id/second_profile_photo"
+            android:layout_toRightOf="@+id/second_profile_photo"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+  </RelativeLayout>
+
+  <Button
+          android:id="@+id/btn_cancel_payment"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentLeft="false"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/textView"
+          android:layout_marginEnd="24dp"
+          android:layout_marginRight="24dp"
+          android:layout_marginTop="24dp"
+          android:background="#EEEEEE"
+          android:paddingEnd="24dp"
+          android:paddingLeft="24dp"
+          android:paddingRight="24dp"
+          android:paddingStart="24dp"
+          android:text="CANCELAR COBRANÇA"
+          android:textColor="#38B66C" />
+
+  <RelativeLayout
+          android:id="@+id/status_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView"
+          android:layout_marginEnd="24dp"
+          android:layout_marginLeft="24dp"
+          android:layout_marginRight="24dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="24dp"
+          android:padding="24dp"
+          android:background="#F15E4F">
+
+    <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="This transaction request is already processed."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+  </RelativeLayout>
+
+</RelativeLayout>

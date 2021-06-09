@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+  <RelativeLayout 
+    android:id="@+id/toggle_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+                
+    <TextView
+            android:id="@+id/toggle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="Ativar Clube de Desconto"
+            android:textColor="@color/black"/>
+
+    <ToggleButton
+              android:id="@+id/toggle_activate"
+              android:layout_width="40dp"
+              android:layout_height="20dp"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="10dp"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/switch_bg_grey"
+              android:checked="false"
+              android:textOff=""
+              android:textOn="" />
+  </RelativeLayout >
+  
+  <TextView
+            android:id="@+id/warning_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggle_wrapper"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="@string/discount_club_setting_text"
+            android:textColor="@color/black"/>
+  <RelativeLayout
+    android:id="@+id/bonus_wrapper"
+    android:layout_below="@id/warning_text" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:padding="15dp">
+                
+    <TextView
+            android:id="@+id/bonus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="Bonificar"
+            android:textColor="@color/grey_letters"/>
+
+    <EditText
+            android:id="@+id/bonus_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bonus_title" 
+            android:background="@drawable/light_grey_bottom_border"
+            android:paddingTop="15dp"
+            android:singleLine="true" />
+  </RelativeLayout >
+  
+  <RelativeLayout
+    android:id="@+id/currency_wrapper"
+    android:layout_below="@id/bonus_wrapper" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+                
+    <TextView
+            android:id="@+id/currency_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="A cada R$ em compras"
+            android:textColor="@color/grey_letters"/>
+
+    <EditText
+            android:id="@+id/currency_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currency_title" 
+            android:background="@drawable/light_grey_bottom_border"
+            android:paddingTop="15dp"
+            android:singleLine="true" />
+  </RelativeLayout >
+  
+  <RelativeLayout
+    android:id="@+id/validity_wrapper"
+    android:layout_below="@id/currency_wrapper" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+                
+    <TextView
+            android:id="@+id/validity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="Selecione a data de validade"
+            android:textColor="@color/grey_letters"/>
+            
+
+    <TextView
+            android:id="@+id/discount_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/validity_title" 
+            android:paddingTop="15dp"
+            android:text="Selecione"/>
+  </RelativeLayout >
+  
+  <Button
+            android:id="@+id/confirmation_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="SALVAR DESCONTO"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            style="@style/red_button"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

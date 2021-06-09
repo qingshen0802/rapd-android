@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_list_view"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_list"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_placeholder" />
+
+    <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/image_list"
+            android:layout_alignLeft="@+id/image_list"
+            android:layout_alignRight="@+id/image_list"
+            android:layout_alignTop="@+id/image_list"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+            android:id="@+id/title_and_value_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_list"
+            android:layout_alignTop="@+id/image_list"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@+id/image_list">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:id="@+id/time_ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/image_list"
+                    android:text="time ago"
+                    android:textColor="@color/light_grey"
+                    android:textSize="13sp" />
+
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/value_credited"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/value_credited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

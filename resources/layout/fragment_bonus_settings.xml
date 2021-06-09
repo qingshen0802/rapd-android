@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+  <RelativeLayout 
+    android:id="@+id/warning_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/flat_color_primary"
+    android:orientation="vertical">
+    
+    <ImageView
+          android:id="@+id/approved_ic"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="25dp"
+          android:src="@drawable/exclamation"/>
+    <TextView
+            android:id="@+id/warning_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/approved_ic"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="@string/bonus_setting_text"
+            android:textColor="@color/white"/>
+
+  </RelativeLayout>
+                
+  <RelativeLayout 
+    android:id="@+id/toggle_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/warning_wrapper"
+    android:padding="15dp">
+                
+    <TextView
+            android:id="@+id/toggle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:text="ATIVADO"
+            android:textColor="@color/black"/>
+
+    <ToggleButton
+              android:id="@+id/toggle_activate"
+              android:layout_width="40dp"
+              android:layout_height="20dp"
+              android:layout_marginTop="7dp"
+              android:layout_marginRight="10dp"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/switch_bg_grey"
+              android:checked="false"
+              android:textOff=""
+              android:textOn="" />
+  </RelativeLayout>
+</RelativeLayout>

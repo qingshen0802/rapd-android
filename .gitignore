@@ -1,0 +1,5 @@
+build
+.DS_Store
+.repl_history
+vendor/Gradle
+temp

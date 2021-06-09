@@ -1,0 +1,55 @@
+class Notification < BaseEntity
+  attr_accessor :id,:type, :notifiable_id, :notifiable_type, :user_id , :profile_id, :title,
+                :description, :read ,:importance, :created_at, :updated_at, :color, :from_user_name, :from_user_photo_url, :to_user_name, :to_user_photo_url
+
+
+  #     "id" => "536",
+  #     "type" => "PaymentRequestNotification",
+  #     "notifiable_id" => 55,
+  #     "notifiable_type" => "TransactionRequest",
+  #     "user_id" => 2,
+  #     "profile_id" => 3,
+  #     "title" => "Solicitação de pagamento",
+  #     "description" => "@tscatigno solicitou o pagamento de \x20AC 100.00.",
+  #     "read" => false,
+  #     "importance" => 1,
+  #     "created_at" => "2017-05-19T15:17:12.000Z",
+  #     "updated_at" => "2017-05-19T15:17:12.000Z",
+  #     "color" => "F6A623",
+  #     "from_user_name" => "tscatigno",
+  #     "from_user_photo_url" => "/images/original/missing.png",
+  #     "to_user_name" => "arya",
+  #     "to_user_photo_url" => "https://rapd-production.s3.amazonaws.com/people/photos/000/000/003/9d4b2ea3c871
+
+  #     "id" => "582",
+  #     "type" => "ReceiptNotification",
+  #     "notifiable_id" => 411,
+  #     "notifiable_type" => "RapdTransaction",
+  #     "user_id" => 2,
+  #     "profile_id" => 3,
+  #     "title" => "Pagamento recebido",
+  #     "description" => "Você recebeu R$2.00 de @vlad.",
+  #     "read" => false,
+  #     "importance" => 1,
+  #     "created_at" => "2017-05-23T16:32:35.000Z",
+  #     "updated_at" => "2017-05-23T16:32:35.000Z",
+  #     "color" => "38B66C",
+  #     "from_user_name" => "vlad",
+  #     "from_user_photo_url" => "https://rapd-production.s3.amazonaws.com/people/photos/000/000/042/610efeec68548cbbbdb838519c112909af3b67f6/original/photo.png?1492619110",
+  #     "to_user_name" => "arya",
+  #     "to_user_photo_url" => "https://rapd-production.s3.amazonaws.com/people/photos/000/000/003/9d4b2ea3c871795c957fb4ce89a1474d378f1a30/original/photo.jpg?1493737637"
+
+  #     "id" => "548",
+  #     "type" => "WarningNotification",
+  #     "notifiable_id" => 50,
+  #     "notifiable_type" => "Transaction",
+  #     "user_id" => 2,
+  #     "profile_id" => 3,
+  #     "title" => "Solicitação de crédito",
+  #     "description" => "Você solicitou o crédito de 100.00 em uma de suas carteiras.",
+  #     "read" => false,
+  #     "importance" => 1,
+  #     "created_at" => "2017-05-19T18:39:34.000Z",
+  #     "updated_at" => "2017-05-19T18:39:34.000Z",
+  #     "color" => "CE5F5F"
+end

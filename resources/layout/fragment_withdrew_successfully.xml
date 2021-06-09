@@ -1,0 +1,45 @@
+<RelativeLayout android:id="@+id/request_value_layout_requested_successfully"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pale_blue_background"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingLeft="@dimen/large_left_margin"
+                android:paddingRight="15dp"
+                android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/value_requested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você solicitou"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:customFont="roboto_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/value_requested"
+        android:layout_below="@id/value_requested"
+        android:layout_marginTop="15dp"
+        android:text="@string/withdraw_success_message_2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:customFont="roboto"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/red_button"
+        android:padding="10dp"
+        android:text="ok"
+        android:textAllCaps="true"
+        android:textColor="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://assets.pagar.me/js/pagarme.min.js"></script>
+    </head>
+
+    <body>
+
+        <div id="hash">Hash:???</div>
+        <div id="key">key:???</div>
+
+        <form id="payment_form" action="" method="POST">
+            Número do cartão: <input type="text" id="card_number"/>
+            <br/>
+            Nome (como escrito no cartão): <input type="text" id="card_holder_name"/>
+            <br/>
+            Mês de expiração: <input type="text" id="card_expiration_month"/>
+            <br/>
+            Ano de expiração: <input type="text" id="card_expiration_year"/>
+            <br/>
+            Código de segurança: <input type="text" id="card_cvv"/>
+            <br/>
+            <div id="field_errors">
+            </div>
+            <br/>
+            <input type="submit"></input>
+        </form>
+
+    </body>
+
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            var form = $("#payment_form");
+            PagarMe.encryption_key = Android.getPagarMeKey();
+
+            form.submit(function(event) { 
+                var creditCard = new PagarMe.creditCard();
+                creditCard.cardHolderName = $("#payment_form #card_holder_name").val();
+                creditCard.cardExpirationMonth = $("#payment_form #card_expiration_month").val();
+                creditCard.cardExpirationYear = $("#payment_form #card_expiration_year").val();
+                creditCard.cardNumber = $("#payment_form #card_number").val();
+                creditCard.cardCVV = $("#payment_form #card_cvv").val();
+
+                var fieldErrors = creditCard.fieldErrors();
+                var hasErrors = false;
+                for(var field in fieldErrors) { hasErrors = true; break; }
+
+                if(hasErrors) {
+                    Android.show_error();
+                } else {
+                    creditCard.generateHash(function(cardHash) {
+                        Android.cardHashGenerated(cardHash)
+                    });
+                }
+
+                return false;
+            });
+        });
+    </script>
+
+</html>

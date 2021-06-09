@@ -1,0 +1,22 @@
+GIT
+  remote: https://github.com/rafaeliga/Flow.git
+  revision: bab7fe9af7ecc2e906119e0664d210e1740d42f1
+  specs:
+    motion-flow (0.1.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    motion-gradle (2.1.0)
+    rake (12.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-flow!
+  motion-gradle
+  rake
+
+BUNDLED WITH
+   1.14.6

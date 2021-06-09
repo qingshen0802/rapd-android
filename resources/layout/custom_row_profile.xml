@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/opt_profile"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@+id/option_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignTop="@+id/option_image"
+        android:layout_toRightOf="@+id/option_image">
+
+        <TextView
+            android:id="@+id/option_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/option_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/option_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/option_info"
+            android:textSize="14sp"
+            android:textColor="@color/grey_letters"
+            android:layout_below="@id/option_name"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/soft_grey"
+            android:layout_below="@+id/option_info"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

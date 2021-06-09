@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="@color/material_blue_grey_800"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        />
+    <TextView
+        android:id="@+id/btn_another_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/access_another_profile"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        />
+    <TextView
+        android:id="@+id/btn_create_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_profile"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        />
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="@color/transparent_dark"
+			android:paddingTop="10dp"
+			android:paddingBottom="0dp"
+			android:paddingRight="20dp"
+			android:paddingEnd="20dp"
+			android:paddingLeft="20dp"
+			android:paddingStart="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="end|center_vertical"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Portfolio"/>
+
+        <ImageButton
+            android:id="@+id/dismiss"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="fitEnd"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/close_white_icon"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wallets_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="15dp"/>
+
+</LinearLayout>

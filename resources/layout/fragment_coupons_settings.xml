@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorPrimary">
+
+
+  <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/btn_bonus"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:text="VER BÔNUS" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_bonus"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true">
+
+      <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="84dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:orientation="horizontal">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+          <EditText
+                  android:id="@+id/edt_number_one"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/number_back"
+                  android:ems="10"
+                  android:inputType="number"
+                  android:maxLength="1"
+                  android:maxLines="1"
+                  android:text=""
+                  android:textAlignment="center"
+                  android:textSize="32sp"
+                  android:gravity="center"
+                  android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+          <EditText
+                  android:id="@+id/edt_number_two"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/number_back"
+                  android:ems="10"
+                  android:inputType="number"
+                  android:maxLength="1"
+                  android:maxLines="1"
+                  android:text=""
+                  android:textSize="32sp"
+                  android:gravity="center"
+                  android:textAlignment="center"
+                  android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+          <EditText
+                  android:id="@+id/edt_number_three"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/number_back"
+                  android:ems="10"
+                  android:inputType="number"
+                  android:maxLength="1"
+                  android:maxLines="1"
+                  android:text=""
+                  android:textSize="32sp"
+                  android:textAlignment="center"
+                  android:gravity="center"
+                  android:textColor="@android:color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+          <EditText
+                  android:id="@+id/edt_number_four"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/number_back"
+                  android:ems="10"
+                  android:inputType="number"
+                  android:maxLength="1"
+                  android:maxLines="1"
+                  android:text=""
+                  android:textSize="32sp"
+                  android:gravity="center"
+                  android:textAlignment="center"
+                  android:textColor="@android:color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+          <EditText
+                  android:id="@+id/edt_number_five"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/number_back"
+                  android:ems="10"
+                  android:inputType="number"
+                  android:maxLength="1"
+                  android:maxLines="1"
+                  android:text=""
+                  android:textSize="32sp"
+                  android:gravity="center"
+                  android:textAlignment="center"
+                  android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
+      </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="36dp"
+            android:text="Se você ganhou um bônus, insira o código abaixo para resgatá-lo."
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/bonus" />
+  </RelativeLayout>
+
+</FrameLayout>
